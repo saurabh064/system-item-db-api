@@ -23,4 +23,5 @@ http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/sc
     </http:listener-config>
     
     <apikit:config name="system-item-db-api-config" raml="system-item-db-api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
+	
 </mule>
