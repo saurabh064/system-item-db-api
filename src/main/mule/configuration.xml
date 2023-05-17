@@ -16,7 +16,7 @@ http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/sc
 	
 	<db:config name="Database_Config" doc:name="Database Config" doc:id="09b2557d-8fc2-4609-b451-e4d80a8bfba3" >
 		<db:mssql-connection host="${secure::db.connection.host}" port="${secure::db.connection.port}" user="${secure::db.connection.user}" password="${secure::db.connection.password}" />
-	</db:config>
+	</db:config> <!--  conflict test -->
 	
 	<http:listener-config name="system-item-db-api-httpListenerConfig">
         <http:listener-connection host="0.0.0.0" port="${secure::http.port}" />
