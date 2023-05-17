@@ -25,6 +25,7 @@
     </flow>
     <flow name="get:\items\(item-id):system-item-db-api-config">
         <flow-ref doc:name="get-item-by-uriparam-flo" doc:id="850eb15d-b3c0-417e-9f1c-4c1f43544bc1" name="get-item-by-uriparam-flow" />
-        <error-handler ref="globalError_Handler" />
+        <logger level="INFO" doc:name="Logger" doc:id="d0ef3721-780a-4594-9022-8b5fb9e7b981" message="end flow"/>
+		<error-handler ref="globalError_Handler" />
     </flow>
 </mule>
